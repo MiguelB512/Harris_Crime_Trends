@@ -23,4 +23,4 @@ Final project for Rice Bootcamp, analyzing crime data in Harris County
 ## Group Members 
 - Liz McDaneld
 - Meghan Hull
-- Miguel Boada
+- Jose Miguel Boada
