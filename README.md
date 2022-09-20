@@ -19,3 +19,8 @@ Final project for Rice Bootcamp, analyzing crime data in Harris County
 | SciPy | 1.7.3 |
 | Scikit-learn | 1.0.2 |
 | Visual Studio Code | 1.70.2 |
+
+## Group Members 
+- Liz McDaneld
+- Meghan Hull
+- Miguel Boada
