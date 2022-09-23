@@ -1,0 +1,64 @@
+-- Creating Tables for Crime_AnalysisDB
+
+CREATE TABLE Income_by_Zipcode (
+	household_income INT,
+	county VARCHAR,
+	year_date DATE,
+	zipcode INT,
+	total_crime_rate_by_zip INT,
+	UNIQUE (total_crime_rate_by_zip),
+	FOREIGN KEY (county) REFERENCES County (county),
+	FOREIGN KEY (year_date) REFERENCES Yearly_Crime (year_date),
+	PRIMARY KEY (household_income)
+);
+
+SELECT * FROM Income_by_Zipcode
+
+CREATE TABLE Monthly_Crime (
+	month_name DATE,
+	county VARCHAR,
+	zipcode VARCHAR,
+	crime_by_month INT,
+	arson INT,
+	burglery INT,
+	robbery INT,
+	assuault INT,
+	murder INT,
+	MV_theft INT,
+	FOREIGN KEY (county) REFERENCES County (county),
+	PRIMARY KEY (month_name)
+);
+
+SELECT * FROM Monthly_Crime
+
+CREATE TABLE County (
+	county VARCHAR,
+	total_crime_rate INT,
+	arson INT,
+	burglery INT,
+	robbery INT,
+	assault INT,
+	murder INT,
+	MV_theft INT,
+	FOREIGN KEY (total_crime_rate) REFERENCES Yearly_Crime (total_crime_rate),
+	PRIMARY KEY (county)
+);
+
+SELECT * FROM County
+
+CREATE TABLE Yearly_Crime (
+	year_date DATE,
+	total_crime_rate INT,
+	county VARCHAR,
+	zipcode INT,
+	arson INT,
+	burglery INT,
+	robbery INT,
+	assault INT,
+	murder INT,
+	MV_theft INT,
+	PRIMARY KEY (total_crime_rate),
+	UNIQUE (year_date)
+);
+
+SELECT * FROM Yearly_Crime
