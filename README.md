@@ -5,7 +5,7 @@ Final project for Rice Bootcamp, analyzing crime data in Harris County
 1. Link to raw data [^1]
 2. Link to code [^2]
 
-[^1]: Texas DPS. "Crime in Texas." [https://min-api.cryptocompare.com/data/all/coinlist](https://www.dps.texas.gov/section/crime-records/crime-texas)
+[^1]: Texas DPS. "Crime in Texas." [https://min-api.cryptocompare.com/data/all/coinlist](https://crime-data-explorer.app.cloud.gov/pages/home)
 [^2]: Jupyter Notebook
 
 ### Software & CDNs
