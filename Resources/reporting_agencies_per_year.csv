@@ -9,7 +9,7 @@ Brazoria County,2015,21
 Brazoria County,2016,22
 Brazoria County,2017,22
 Brazoria County,2018,21
-Brazoria County,2019,24
+Brazoria County,2019,23
 Brazoria County,2020,22
 Brazos County,2015,4
 Brazos County,2016,4
@@ -35,19 +35,27 @@ Galveston County,2017,17
 Galveston County,2018,17
 Galveston County,2019,16
 Galveston County,2020,17
+Grimes County,2015,2
+Grimes County,2016,2
+Grimes County,2017,2
+Grimes County,2018,2
+Grimes County,2019,2
+Grimes County,2020,2
 Harris County,2015,42
 Harris County,2016,44
 Harris County,2017,44
 Harris County,2018,45
 Harris County,2019,45
 Harris County,2020,45
+Liberty County,2015,4
 Liberty County,2016,4
+Liberty County,2017,3
 Liberty County,2018,4
 Liberty County,2019,4
 Liberty County,2020,4
-Matagorda County,2015,8
+Matagorda County,2015,4
 Matagorda County,2016,4
-Matagorda County,2017,7
+Matagorda County,2017,4
 Matagorda County,2018,4
 Matagorda County,2019,5
 Matagorda County,2020,5
@@ -63,12 +71,13 @@ Polk County,2017,4
 Polk County,2018,4
 Polk County,2019,4
 Polk County,2020,4
+San Jacinto County,2015,1
 San Jacinto County,2016,1
 San Jacinto County,2017,1
 San Jacinto County,2018,1
 San Jacinto County,2019,1
 San Jacinto County,2020,1
-Walker County,2015,3
+Walker County,2015,2
 Walker County,2016,2
 Walker County,2017,2
 Walker County,2018,2
@@ -80,6 +89,12 @@ Waller County,2017,6
 Waller County,2018,6
 Waller County,2019,6
 Waller County,2020,6
+Washington County,2015,2
+Washington County,2016,2
+Washington County,2017,2
+Washington County,2018,2
+Washington County,2019,2
+Washington County,2020,2
 Wharton County,2015,3
 Wharton County,2016,3
 Wharton County,2017,3
