@@ -1,5 +1,5 @@
 # Houston Area Crime
-Final project for Rice Bootcamp, analyzing crime data in the greater Houston area
+Final project for Rice Bootcamp, analyzing crime data in the Greater Houston area
 
 ## Project Goals
 With Houston being such a large city, we wanted to take a look at crime statistics and see if we could compare how election years, counties, and other factors may determine the crime numbers for different counties. 
