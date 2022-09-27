@@ -10,6 +10,8 @@ CREATE TABLE outter_county (
 	assault INT,
 	murder INT,
 	MV_theft INT,
+	violent_crime INT,
+	non_violent_crime INT,
 	FOREIGN KEY (year_date) REFERENCES Yearly_Crime (year_date),
 	FOREIGN KEY (total_crime_rate) REFERENCES Yearly_Crime (total_crime_rate),
 	PRIMARY KEY (county)
@@ -27,6 +29,8 @@ CREATE TABLE yearly_crime (
 	assault INT,
 	murder INT,
 	MV_theft INT,
+	violent_crime INT,
+	non_violent_crime INT,
 	PRIMARY KEY (total_crime_rate),
 	UNIQUE (year_date)
 );
@@ -43,6 +47,8 @@ CREATE TABLE harris_crime(
 	assault INT,
 	murder INT,
 	MV_theft INT,
+	violent_crime INT,
+	non_violent_crime INT,
 	FOREIGN KEY (year_date) REFERENCES Yearly_Crime (year_date)
 );
 SELECT * FROM harris_crime
