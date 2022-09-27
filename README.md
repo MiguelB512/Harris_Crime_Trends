@@ -11,8 +11,9 @@ Some questions we wanted to try and answer are:
 - Can predictions be made about which crimes are more predominant during certain times of the year? Or if there is another pandemic what prediction can be made about crime?
 
 ## Communication protocols 
-
-
+- Slack
+- Zoom
+- Google Sheets
 
 ## Resources
 ### Data Sources & Bespoke Code
