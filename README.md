@@ -1,5 +1,17 @@
-# Harris_Crime_Trends
-Final project for Rice Bootcamp, analyzing crime data in Harris County
+# Houston Area Crime
+Final project for Rice Bootcamp, analyzing crime data in the greater Houston area
+
+## Project Goals
+With Houston being such a large city, we wanted to take a look at crime statistics and see if we could compare how election years, counties, and other factors may determine the crime numbers for different counties. 
+
+Some questions we wanted to try and answer are:
+- What are the crime rates for the Houston area?
+- What crimes are trending/increased over the past couple years?
+- Was there a drop in crime, or an increase in crime during the Covid-10 Pandemic?
+- Can predictions be made about which crimes are more predominant during certain times of the year? Or if there is another pandemic what prediction can be made about crime?
+
+## Communication protocols 
+
 ## Resources
 ### Data Sources & Bespoke Code
 1. Link to raw data [^1]
