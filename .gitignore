@@ -9,6 +9,9 @@ __pycache__/
 # Config file
 config.py
 
+# Liz ML
+Crime_UnupervisedML.ipynb 
+
 # Distribution / packaging
 .Python
 build/
