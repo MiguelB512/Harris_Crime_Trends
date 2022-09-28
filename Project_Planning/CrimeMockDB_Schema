@@ -1,0 +1,54 @@
+-- Creating Mock Tables for Crime_AnalysisDB
+
+CREATE TABLE outter_county (
+	county VARCHAR,
+	total_crime_rate INT,
+	year_date DATE,
+	arson INT,
+	burglery INT,
+	robbery INT,
+	assault INT,
+	murder INT,
+	MV_theft INT,
+	violent_crime INT,
+	non_violent_crime INT,
+	FOREIGN KEY (year_date) REFERENCES Yearly_Crime (year_date),
+	FOREIGN KEY (total_crime_rate) REFERENCES Yearly_Crime (total_crime_rate),
+	PRIMARY KEY (county)
+);
+
+SELECT * FROM outter_county
+
+CREATE TABLE yearly_crime (
+	year_date DATE,
+	total_crime_rate INT,
+	county VARCHAR,
+	arson INT,
+	burglery INT,
+	robbery INT,
+	assault INT,
+	murder INT,
+	MV_theft INT,
+	violent_crime INT,
+	non_violent_crime INT,
+	PRIMARY KEY (total_crime_rate),
+	UNIQUE (year_date)
+);
+
+SELECT * FROM yearly_crime
+
+CREATE TABLE harris_crime(
+	year_date DATE,
+	total_crime_rate INT,
+	county VARCHAR,
+	arson INT,
+	burglery INT,
+	robbery INT,
+	assault INT,
+	murder INT,
+	MV_theft INT,
+	violent_crime INT,
+	non_violent_crime INT,
+	FOREIGN KEY (year_date) REFERENCES Yearly_Crime (year_date)
+);
+SELECT * FROM harris_crime
