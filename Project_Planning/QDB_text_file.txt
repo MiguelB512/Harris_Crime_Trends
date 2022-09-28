@@ -1,0 +1,41 @@
+Outter_County 
+--
+county VARCHAR pk
+total_crime_rate INT fk
+arson INT
+burglery INT
+robbery INT
+assault INT
+murder INT
+MV_theft INT
+violent_crime INT
+non_violent_crime INT
+year_date DATE
+
+Yearly_Crime 
+--
+total_crime_rate INT pk FK >- Outter_County.total_crime_rate
+year_date DATE FK >- Harris_Crime.year_date
+county VARCHAR
+arson INT
+burglery INT
+robbery INT
+assault INT
+murder INT
+violent_crime INT
+non_violent_crime INT
+MV_theft INT
+
+Harris_Crime 
+--
+year_date DATE FK >- Outter_County.year_date
+total_crime_rate INT
+county VARCHAR
+arson INT
+burglery INT
+robbery INT
+assault INT
+murder INT
+violent_crime INT
+non_violent_crime INT
+MV_theft INT
