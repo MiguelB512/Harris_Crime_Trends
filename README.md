@@ -58,7 +58,7 @@ Resources for gathering our data consist of government and city data websites wi
 
 Our current plan for a provisional machine learning model can be found here:
 
-[link for Meghan’s ML model]
+[Machine Learning Preliminary Models](https://github.com/MiguelB512/Harris_Crime_Trends/blob/mhull/MLCode/crime_ML_Models.ipynb)
 
 ## Database Integration
 
