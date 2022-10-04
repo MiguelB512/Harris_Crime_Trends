@@ -1,4 +1,4 @@
-County,Agency_Count,Murder,Rape,Assault,Burglary,Larceny,Auto_Theft,Violent_Offenses,NonViolent_Offenses,Total_Crime,Population
+county,agency_count,murder,rape,assault,burglary,larceny,auto_theft,violent_offenses,nonviolent_offenses,total_crime,population
 Austin County,30,3,47,233,589,1123,178,283,1890,2202,29846
 Brazoria County,131,49,709,2417,5602,26331,2500,3175,34433,38304,369691
 Brazos County,24,38,895,2556,4993,24075,1886,3489,30954,35089,224101
