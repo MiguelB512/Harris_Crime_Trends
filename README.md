@@ -1,6 +1,6 @@
 # Houston Area Crime
 
-### An analysis by: Jose Miguel Boada | Meghan Hull | Liz McDanled
+### An analysis by: Jose Miguel Boada | Liz McDanled
 
 ## Purpose:
 
