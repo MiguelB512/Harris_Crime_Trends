@@ -84,7 +84,7 @@ From the dataset that was found, explored, and cleaned a sample set of data was 
 
 ### Raw Data Sources
 
-(Federal Bureau of Investigation Crime Data Explorer)[https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/crime-trend]
+[Federal Bureau of Investigation Crime Data Explorer](https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/crime-trend)
 
 ### Software & CDNs
 
