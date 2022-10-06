@@ -53,8 +53,6 @@ https://github.com/MiguelB512/Harris_Crime_Trends/tree/Machine_Learning/ML_Explo
 
 ![bokeh_plot (1)](https://user-images.githubusercontent.com/103263248/194185501-444e96a6-0645-4e55-b38b-4181ba36aae3.png)
 
-Our Linear Regresion plotting can be found [here](https://github.com/MiguelB512/Harris_Crime_Trends/blob/Machine_Learning/ML_Exploring/Linear_Regression_Plot_Models.ipynb).
-
 ## Database Integration
 
 For the first segment of this project a mock QDB with keys and data types is created to visualize the direction and goal of the database.
