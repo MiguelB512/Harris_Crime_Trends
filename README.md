@@ -5,6 +5,7 @@
 ## Purpose:
 
 Analyzing Crime data in the Greater Houston Area Counties to assess what trends and predictions can be made.
+
 ## Project Goals
 
 The Greater Houston Area is a large portion of Southeast Texas consisting of 17 counties, and with an estimated population of 7.21 million. Our goal is to look at documented crimes from 2015 to 2020 and their statistics to see how the years, counties, and other factors compare and what factors may determine the crime numbers for different counties. 
@@ -29,36 +30,28 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 - Google Sheets
 
-Our designated team member roles for this project are:
-
-##### Jose Miguel Boada 
-- Responsible for setting up the repository. This includes naming the repository and adding team members. Ensures everyone has his or her own branch to work from. 
-
-##### Meghan Hull 
-- Responsible for creating a simple machine learning model. Creating a simple model this early in the design process helps a team better understand where and how a machine learning model will fit into the project. This also grants more time to work out the specifics related to machine learning.
-
-##### Liz McDaneld 
-- In charge of the mockup database. Using a SQL-based database, including an ERD of the database and a document pointing out how it is integrated into your database and how it works with the code. 
-
 ## Resources
 
 Resources for gathering our data consist of government and city data websites with crime data made available to the public.
 
-### Data Sources & Bespoke Code
-
-1. Link to raw data [^1]
-
-2. Link to code [^2]
-
-[^1]: Texas DPS. "Crime in Texas." [https://min-api.cryptocompare.com/data/all/coinlist](https://crime-data-explorer.app.cloud.gov/pages/home)
-
-[^2]: Jupyter Notebook
+## Google Slides Overview
+Click Here: [Google Slides Presentation](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
 
 ## Machine Learning Model
 
-Our current plan for a provisional machine learning model can be found here:
+Our current plan for a provisional machine learning model is using Clustering with K-means and Linear Regression models.
+Our feature selections will be looking at the crime rates compared to the population rates of the counties in Texas with a focused comparison on violent to nonviolent crimes. We also took a close up look on the Houston TX Area.
 
-[Machine Learning Preliminary Models](https://github.com/MiguelB512/Harris_Crime_Trends/blob/mhull/MLCode/crime_ML_Models.ipynb)
+Our models and exploration of other machine learning models can be found on our [Machine Learning Branch](
+https://github.com/MiguelB512/Harris_Crime_Trends/tree/Machine_Learning/ML_Exploring).
+
+- Clustering Crime with K-Means for Texas Counties:
+
+![bokeh_plot](https://user-images.githubusercontent.com/103263248/194184834-b508ff95-5a2d-4ce7-a50a-9bbfb0982ba3.png)
+
+- Clustering Crime with K-Means for Texas Counties in the Greater Houston Area:
+
+![bokeh_plot (1)](https://user-images.githubusercontent.com/103263248/194185501-444e96a6-0645-4e55-b38b-4181ba36aae3.png)
 
 ## Database Integration
 
@@ -88,6 +81,10 @@ From the dataset that was found, explored, and cleaned a sample set of data was 
 - Harris_Crime_Table
 ![Harris_Crime_Table_sample_data](https://user-images.githubusercontent.com/103263248/192551106-10a65592-fe19-4fea-aa47-b76dfa95006c.png)
 
+
+### Raw Data Sources
+
+(Federal Bureau of Investigation Crime Data Explorer)[https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/crime-trend]
 
 ### Software & CDNs
 
