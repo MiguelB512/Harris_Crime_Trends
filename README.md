@@ -30,10 +30,6 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 - Google Sheets
 
-## Resources
-
-Resources for gathering our data consist of government and city data websites with crime data made available to the public.
-
 ## Google Slides Overview
 Click [here](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
 
