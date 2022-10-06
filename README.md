@@ -39,8 +39,8 @@ Resources for gathering our data consist of government and city data websites wi
 Our current plan for a provisional machine learning model is using Clustering with K-means and Linear Regression models.
 Our feature selections will be looking at the crime rates compared to the population rates of the counties in Texas with a focused comparison on violent to nonviolent crimes. We also took a close up look on the Houston TX Area.
 
-Our models and exploration of other machine learning models can be found on our (Machine Learning Branch)[
-https://github.com/MiguelB512/Harris_Crime_Trends/tree/Machine_Learning/ML_Exploring].
+Our models and exploration of other machine learning models can be found on our [Machine Learning Branch](
+https://github.com/MiguelB512/Harris_Crime_Trends/tree/Machine_Learning/ML_Exploring).
 
 - Clustering Crime with K-Means for Texas Counties:
 
@@ -50,7 +50,7 @@ https://github.com/MiguelB512/Harris_Crime_Trends/tree/Machine_Learning/ML_Explo
 
 ![bokeh_plot (1)](https://user-images.githubusercontent.com/103263248/194185501-444e96a6-0645-4e55-b38b-4181ba36aae3.png)
 
-Our Linear Regresion plotting can be found (here)[https://github.com/MiguelB512/Harris_Crime_Trends/blob/Machine_Learning/ML_Exploring/Linear_Regression_Plot_Models.ipynb].
+Our Linear Regresion plotting can be found [here](https://github.com/MiguelB512/Harris_Crime_Trends/blob/Machine_Learning/ML_Exploring/Linear_Regression_Plot_Models.ipynb).
 
 ## Database Integration
 
