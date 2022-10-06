@@ -34,6 +34,9 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 Resources for gathering our data consist of government and city data websites with crime data made available to the public.
 
+## Google Slides Overview
+Click Here: [Google Slides Presentation](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
+
 ## Machine Learning Model
 
 Our current plan for a provisional machine learning model is using Clustering with K-means and Linear Regression models.
