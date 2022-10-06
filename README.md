@@ -43,7 +43,7 @@ https://github.com/MiguelB512/Harris_Crime_Trends/tree/Machine_Learning/ML_Explo
 
 - Clustering Crime with K-Means for Texas Counties:
 
-![bokeh_plot](https://user-images.githubusercontent.com/103263248/194195759-f461b3ca-df59-4587-ab17-8b1fe48e2e03.png)
+![bokeh_plot (1)](https://user-images.githubusercontent.com/103263248/194195816-3118b7cc-17a0-4e0a-b0b2-9e4c8d38ea7c.png)
 
 - Clustering Crime with K-Means for Texas Counties in the Greater Houston Area:
 
