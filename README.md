@@ -2,13 +2,9 @@
 
 ### An analysis by: Jose Miguel Boada | Liz McDanled
 
-## Purpose:
+## Project Goals and Purpose 
 
-Analyzing Crime data in the Greater Houston Area Counties to assess what trends and predictions can be made.
-
-## Project Goals
-
-The Greater Houston Area is a large portion of Southeast Texas consisting of 17 counties, and with an estimated population of 7.21 million. Our goal is to look at documented crimes from 2015 to 2020 and their statistics to see how the years, counties, and other factors compare and what factors may determine the crime numbers for different counties. 
+The Greater Houston Area is a large portion of Southeast Texas consisting of 17 counties, and with an estimated population of 7.21 million. The goal is to look at documented crimes from 2015 to 2020 and their statistics to see how the years, counties, and other factors compare and what factors may determine the crime numbers for different counties. Our analysis looks at an overview of all Texas counties, with a focus on Harris county and the greater Houston area. 
 
 ### Questions we aim to answer:
 
