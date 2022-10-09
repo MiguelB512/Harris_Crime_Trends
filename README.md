@@ -22,14 +22,6 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 - What predictions be made about which crimes are more predominant during certain times of the year? 
 
-## Communication protocols 
-
-- Slack
-
-- Zoom
-
-- Google Sheets
-
 ## Google Slides Overview
 Click [here](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
 
