@@ -21,15 +21,6 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 - What predictions be made about which crimes are more predominant during certain times of the year? 
 
-
-## Communication protocols 
-
-- Slack
-
-- Zoom
-
-- Google Sheets
-
 ## Machine Learning Model
 
 Our current plan for a provisional machine learning model is using Clustering with K-means and Linear Regression models.
@@ -92,3 +83,11 @@ From the dataset that was found, explored, and cleaned a sample set of data was 
 | SciPy | 1.7.3 |
 | Scikit-learn | 1.0.2 |
 | Visual Studio Code | 1.70.2 |
+
+## Communication protocols 
+
+- Slack
+
+- Zoom
+
+- Google Sheets
