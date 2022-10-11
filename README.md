@@ -21,6 +21,14 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 ## Google Slides Overview
 Click [here](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
 
+## Communication protocols 
+
+- Slack
+
+- Zoom
+
+- Google Sheets
+
 ## Machine Learning Model
 
 Our current plan for a provisional machine learning model is using Clustering with K-means and Linear Regression models.
