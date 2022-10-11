@@ -2,6 +2,9 @@
 
 ### An analysis by: Jose Miguel Boada | Liz McDanled
 
+## Google Slides Overview
+Click [here](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
+
 ## Project Goals and Purpose 
 
 The Greater Houston Area is a large portion of Southeast Texas consisting of 17 counties, and with an estimated population of 7.21 million. The goal is to look at documented crimes from 2015 to 2020 and their statistics to see how the years, counties, and other factors compare and what factors may determine the crime numbers for different counties. Our analysis looks at an overview of all Texas counties, with a focus on Harris county and the greater Houston area. 
@@ -18,8 +21,6 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 - What predictions be made about which crimes are more predominant during certain times of the year? 
 
-## Google Slides Overview
-Click [here](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
 
 ## Communication protocols 
 
