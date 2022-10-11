@@ -96,6 +96,12 @@ header.masthead h2 {
     line-height: 1.5;
 }
 
+.list,
+ul {
+    display: table;
+    margin: 0 auto;
+  }
+
 .skills-row {
     margin-top: 50px;
 }
