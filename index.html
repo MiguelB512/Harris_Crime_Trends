@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Texas Crime Trends | Rice University Data Analytics Bootcamp Final Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="#visualization">visualizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#machinelearning">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tableau">Tableau</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contributors">Contributors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sources">Data Sources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <img class="img-fluid mb-5 d-block mx-auto rounded-circle" src="assets/img/jane.jpg" alt="" />
+            <h1 class="mb-0 "><b>Texas Crime Trends Analysis</b></h1>
+            <hr />
+            <h2 class="mb-0">
+                <b>An analysis by: Jose Miguel Boada | Liz McDanled</b>
+            </h2>
+        </div>
+    </header>
+
+    <section class="brand-statement text-center">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-secondary mb-0">
+                    <b>Overview</b>
+                </h3>
+                <p>
+                    <br>
+                    The Greater Houston Area is a large portion of Southeast Texas 
+                    consisting of 17 counties, and with an estimated population of 7.21 
+                    million. Our goal is to look at documented crimes from 2015 to 
+                    2020 and their statistics to see how the years, counties, 
+                    and other factors may compare, or if they may determine the crimes found 
+                    in different counties. Our analysis looks at an overview of all Texas' counties, 
+                    with a focus the Greater Houston Area.
+                </p>
+            <hr class="star-dark mb-5" />
+        </div>
+    </section>   
+    
+    
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-white">
+                <b>Topic Selction</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <h4 class="text-center text-uppercase text-white">
+                Crime Rates throughout Texas counties from 2015-2020 
+            </h4>
+            <!-- <hr class="star-light mb-5" /> -->
+
+            <p class="about-me text-center">
+                Our goal is to look at documented crimes from 2015 to 2020 
+                and their statistics to see how the years, counties, and other 
+                factors compare and what factors may determine the crime numbers 
+                for different counties.
+                <br>
+                <br>
+                Texas is the second largest state by landmass and also has the 
+                second largest population out of all US states at 29,730,311 and 
+                an annual growth rate of 3.85% (as of march 2021).
+                <br>
+                <br>
+                The Greater Houston Area is a large portion of Southeast Texas 
+                consisting of 17 counties, and with an estimated population of 
+                7.21 million. 
+                <br>
+                <br>
+                Our focus is to look at an overview of Texas counties in relation 
+                to crimes, with a focus on the Greater Houston 
+                area. 
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Data Source</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="about-me text-center">
+                Our Data comes from the FBI Crime Data Explorer, 
+                which offers an abundance of crime data broken down by 
+                different categories such as county, year, violent vs. 
+                nonviolent and more. 
+                <br>
+                <br>
+                We decided to grab the crimes by county for 2015 - 2020 
+                which breaks down not only by county but also by police 
+                department, letting us get a great in depth look at the 
+                whole states statistics.
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Questions we aim to answer</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="list text-center">
+                <ul>
+                    <li>What are the crime rates for the Houston area?</li>
+                    <br>
+                    <li>What crimes are trending/increased over the past couple years?</li>
+                    <br>
+                    <li>What predictions be made about which crimes are more predominant during certain times of the year?</li>
+                    <br>
+                    <li>Which counties across texas look similar in crime rates, and what other similarities may they have?</li>
+                    <br>
+                    <li>Have crime rates slowed down the growth of larger Texas counties?</li> 
+                </ul>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Brief History on Texas Counties</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="about-me text-center">
+                Texas began with 23 counties when it gained independence 
+                from Mexico in 1836. A county was consisted of a council 
+                composed of at least one Judge, a varying number of Aldermen, 
+                an Attorney, a Sheriff and a Secretary. 
+                <br>
+                New counties could be established if 100 free male inhabitants 
+                living in an area containing at least 900 square miles petitioned 
+                the government. By 1845, the count had risen to 36.
+                <br>
+                In 1866, the Texas constitution was created. The government 
+                set up by that constitution lasted only a short while because of 
+                the passage of the Reconstruction Acts in 1867. Under the military 
+                rule that followed, many local elected officials were removed 
+                indiscriminately and either were not replaced or were replaced by 
+                appointees. 
+                <br>
+                This constitution lasted until 1870, when the government was 
+                reorganized under the Constitution of 1869. By the end of 1870 
+                the state had 129 organized counties.  
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Data Exploration
+                </b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="about-me text-center">
+                Once we had our Data, we began to look at different visualizations 
+                to get a feel for how the different counties stacked up against 
+                each other. Initially, we had been looking at Harris country and 
+                the greater Houston area (17 counties total), but after seeing how 
+                much Harris county dominated the graphs, we decided to go bigger.
+                <br>
+                We then gathered data from all counties across texas and combined 
+                them to get a more diverse Dataset and have more visually pleasing 
+                graphics. The Data was cleaned, split into different tables, and 
+                sent into our Postgres DB where we would pull from.  
+            </p>
+        </div>
+    </section>
+
+    <!-- visualizations Grid Section -->
+    <section class="visualizations" id="visualization">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">
+                Visualizations
+            </h2>
+            <hr class="star-dark mb-5" />
+
+            <!-- Each project should include a header and a picture or animated gif.-->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-1">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Total Crime Reported in the Greater Houston Area between 2015 - 2020</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Greater_Houston_Pie_Chart_Edited.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-2">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Top 5 Crime Heavy Texas Counties</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Top_5_Texas_Counties.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-3">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Greater Houston Area Crime Totals from 2015 - 2020</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Greater_Houston_Totals_Vs_Year.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-4">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Project #4</p>
+                                <i class="fas fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/project4.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-5">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Project #5</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/project5.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-6">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Project #6</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/project6.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="tableau text-center" id="tableau">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">
+                Tableau
+            </h2>
+            <hr class="star-dark mb-5" />
+                <div class='tableauPlaceholder' id='viz1665536635425' style='position: relative'><noscript>
+                    <a href='#'><img alt=' '
+                     src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeAnalysisRiceFinal&#47;TopFiveCountiesbyPopandCrime&#47;1_rss.png' 
+                     style='border: none' />
+                    </a>
+                    </noscript>
+                    <object class='tableauViz'  style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                        <param name='embed_code_version' value='3' /> 
+                        <param name='site_root' value='' />
+                        <param name='name' value='CrimeAnalysisRiceFinal&#47;TopFiveCountiesbyPopandCrime' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeAnalysisRiceFinal&#47;TopFiveCountiesbyPopandCrime&#47;1.png' /> 
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
+                </div>                
+                <script type='text/javascript'>                    
+                    var divElement = document.getElementById('viz1665536635425');                    
+                    var vizElement = divElement.getElementsByTagName('object')[0];                    
+                    vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                    var scriptElement = document.createElement('script');                    
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                </script>
+            <hr class="star-dark mb-5" />
+        </div>
+    </section>
+
+    <!-- Machine Learning Section -->
+    <section class="bg-primary text-white mb-0" id="machinelearning">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-white">
+                <b>Machine Learning</b>
+            </h3>
+            <hr class="star-light mb-5" />
+            <h4 class="text-center text-uppercase text-white">
+                Clustering Texas Crime Data with K-means
+            </h4>
+            <!-- <hr class="star-light mb-5" /> -->
+
+            <p class="about-me text-center">
+                Our plan for a machine learning model is using Clustering 
+                with K-means and Linear Regression models. Our feature selections 
+                will be looking at the crime rates compared to the population rates 
+                of the counties in Texas with a focused comparison on violent to 
+                nonviolent crimes. We also took a close look on the Greater Houston, TX Area. 
+                The reason for selecting our model is due to the data not being a fit 
+                for supervised machine learning models. When run through supervised 
+                machine learning with ensemble and resampling the data was split to 
+                small for training and testing purposes. With unsupervised machine 
+                learning and clustering with K-means and Linear regression the data 
+                can be split, scaled, fit, and trained with no numerical value issues. 
+                The data is preprocessed and checked for null values, and duplicate values. 
+                A new DataFrame is made to hold the county names separately. The data us then 
+                standardized with StandarScaler(). PCA is used to reduce dimension to three 
+                principal components, and a new PCS DataFrame is created with them. 
+                An Elbow Cure is created to find the best value for K. Predictions are run 
+                after initializing the KMeans model. A new Clustered DataFrame is created 
+                and data from the Crime DataFrame, and PCS DataFrame, including the 
+                predictions held in the 'Class' column, are concatenated on the same 
+                columns. A 3D Scatter Plot is used to visualize the PCA data and clusters 
+                with popup on hover to see crypto data information. A table with the 
+                crime reporting counties is created with the option to sort and select the data.
+                The data is scaled with MinMaxScaler().fir_transform and a new Plot 
+                DataFrame is created to hold the scaled data with the Clustered 
+                DataFrame index. A scatter plot is created using hvplot.scatter 
+                using x="Violent_Offenses" and y="NonViolent_Offenses" with popups 
+                on hover to display data information.
+
+
+            </p>
+            
+            <section class="machinelearning" id="machinelearning">
+                <div class="container">
+                    <h3 class="text-center text-uppercase text-white mb-0">
+                        Machine Learning Models
+                    </h3>
+                    <hr class="star-dark mb-5" />
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <a class="machinelearning-item d-block mx-auto" data-toggle="modal" data-target="#machinelearning-modal-1">
+                                <div class="machinelearning-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="machinelearning-item-caption-content my-auto w-100 text-center text-white">
+                                        <p>3D Scatter Plot of Texas Counties Clusters</p>
+                                        <i class="fas fa-search-plus fa-2x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets\img\visualizations\Texas_Counties_Clustering_3d_scatter2.png" alt="" />
+                            </a>
+                        </div>
+
+                    
+                        <div class="col-md-6 col-lg-4">
+                            <a class="machinelearning-item d-block mx-auto" data-toggle="modal" data-target="#machinelearning-modal-2">
+                                <div class="machinelearning-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="machinelearning-item-caption-content my-auto w-100 text-center text-white">
+                                        <p>Texas Crime Clustering Scatter Plot</p>
+                                        <i class="fas fa-search-plus fa-2x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets\img\visualizations\Texas_Counties_Clustering2.png" alt="" />
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+            </section>        
+        </div>
+    </section>
+
+
+
+    <!-- Education -->
+    <section class="education" id="sources">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">
+                Data & Information Sources
+            </h2>
+            <hr class="star-dark mb-5" />
+            <div class="credential">
+                <h2 class="location mb-0">
+                    Federal Bureau of Investigation Crime Data Explorer | 
+                    <span class="credential-date text-muted">
+                        <a href="https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/crime-trend" target="_blank"> Link </a>
+                    </span>
+                </h2>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <h2 class="location mb-0">
+                    History on Texas Counties | 
+                    <span class="credential-date text-muted">
+                        <a href="https://www.texastribune.org/2018/07/03/beto-orourke-visited-all-254-counties-texas-why-are-there-so-many/" target="_blank"> Link </a>
+                    </span>
+                </h2>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <h2 class="location mb-0">
+                    A Decade of Population Growth and Decline in U.S. Counties | 
+                    <span class="credential-date text-muted">
+                        <a href="https://www.visualcapitalist.com/mapping-a-decade-of-us-population-growth/" target="_blank"> Link </a>
+                    </span>
+                </h2>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <h2 class="location mb-0">
+                    County Organization | 
+                    <span class="credential-date text-muted">
+                        <a href="https://www.tshaonline.org/handbook/entries/county-organization" target="_blank"> Link </a>
+                    </span>
+                </h2>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <h2 class="location mb-0">
+                    US County Populations 2022 | 
+                    <span class="credential-date text-muted">
+                        <a href="https://worldpopulationreview.com/us-counties" target="_blank"> Link </a>
+                    </span>
+                </h2>
+            </div>
+            <hr class="credential-divider" />
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center" id="contributors">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="text-center text-uppercase mb-3">
+                        Contributor
+                    </h2>
+                    <p class="text-uppercase mb-4">
+                        Miguel Boada
+                    </p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="https://github.com/miguelB512" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+                    <br>
+                    <br>
+
+                    <h2 class="text-center text-uppercase mb-3">
+                        Contributor
+                    </h2>
+                    <p class="text-uppercase mb-4">
+                        Liz McDaneld
+                    </p>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="https://github.com/liz-mcdaneld" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; Miguel Boada and Elizabeth McDaneld 2022</small>
+        </div>
+    </div>
+
+
+
+    <!--visualizations Modals: These are what open up when you click on each project. Replace the information as needed. -->
+    <!-- visualizations Modal 1 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-1">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Total Crimes Reported in the Greater Houston Area between 2015 - 2020
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Greater_Houston_Pie_Chart_Edited.jpg" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/Miguel_branch/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 2 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-2">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Top 5 Crime Heavy Texas Counties
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Top_5_Texas_Counties.jpg" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/Miguel_branch/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 3 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-3">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Greater Houston Area Crime Totals from 2015 - 2020
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Greater_Houston_Totals_Vs_Year.jpg" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            Live Demo
+                        </a>
+
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 4 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-4">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Project Name
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="img/visualizations/project4.jpg" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            Live Demo
+                        </a>
+
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 5 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-5">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Project Name
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="img/visualizations/project5.jpg" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            Live Demo
+                        </a>
+
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 6 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-6">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Project Name
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="img/visualizations/project6.jpg" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            Live Demo
+                        </a>
+
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="#">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!--machine learning Modals: These are what open up when you click on each project. Replace the information as needed. -->
+    <!-- machine learning Modal 1 -->
+    <div class="modal machinelearning-modal mfp-hide" id="machinelearning-modal-1">
+        <div class="machinelearning-modal-dialog bg-white">
+            <a class="close-button machinelearning-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            3D Scatter Plot of Texas Counties Clusters
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets\img\visualizations\Texas_Counties_Clustering_3d_scatter2.png" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/Machine_Learning/ML_Exploring/Unsupervised_ML_Clustering.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ML Modal 2 -->
+    <div class="modal machinelearning-modal mfp-hide" id="machinelearning-modal-2">
+        <div class="machinelearning-modal-dialog bg-white">
+            <a class="close-button machinelearning-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Texas Crime Clustering Scatter Plot
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets\img\visualizations\Texas_Counties_Clustering2.png" alt="" />
+                        <p class="mb-5">
+                            Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Mollitia neque assumenda ipsam
+                            nihil, molestias magnam, recusandae quos quis
+                            inventore quisquam velit asperiores, vitae?
+                            Reprehenderit soluta, eos quod consequuntur
+                            itaque. Nam.
+                        </p>
+                        <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/Machine_Learning/ML_Exploring/Unsupervised_ML_Clustering.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+        integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+</body>
+
+</html>
