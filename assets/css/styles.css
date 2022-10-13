@@ -96,11 +96,12 @@ header.masthead h2 {
     line-height: 1.5;
 }
 
-.list,
-ul {
-    display: table;
-    margin: 0 auto;
-  }
+.counties {
+    columns: 4;
+    -webkit-columns: 4;
+    -moz-columns: 4;
+}
+
 
 .skills-row {
     margin-top: 50px;
