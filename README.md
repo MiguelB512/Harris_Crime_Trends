@@ -15,8 +15,6 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 - What crimes are trending/increased over the past couple years?
 
-- Was there a drop in crime, or an increase in crime during the Covid-19 Pandemic?
-
 - If there is another pandemic what prediction can be made about potential crimes?
 
 - What predictions be made about which crimes are more predominant during certain times of the year? 
