@@ -5,7 +5,8 @@
 ## Project Presentation
 Click [here](https://miguelb512.github.io/Texas_Crime_Trends/) for a website prensentation of out project. 
 
-![image](https://user-images.githubusercontent.com/60283799/195472758-d3287a57-5eef-4588-90b2-b355f574db02.png)
+
+[<img src="https://user-images.githubusercontent.com/60283799/195472758-d3287a57-5eef-4588-90b2-b355f574db02.png">](https://miguelb512.github.io/Texas_Crime_Trends/)
 
 
 ## Project Goals and Purpose 
