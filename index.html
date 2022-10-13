@@ -157,8 +157,8 @@
             </h3>
             <hr class="star-light mb-5" />
 
-            <p class="list text-center">
-                <ul>
+            <p>
+                <ul style="list-style-type:none;" class="text-center">
                     <li>What are the crime rates for the Houston area?</li>
                     <br>
                     <li>What crimes are trending/increased over the past couple years?</li>
@@ -222,20 +222,42 @@
                 The data was cleaned and explored in our Crime Data Analysis 
                 <a class="text-white" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Crime_Data_Analysis.ipynb" target="_blank"> <u>jupyter notebook</u></a>.
                 <br>
+                <br>
                 With a cleaned and transformed dataset, we began to look at different 
                 visualizations to see how the different counties compared against 
                 each other. We began to plan how could we take this data and fit it to a machine
                 learning model to get predicted outcomes of crime rates based on population.
                 <br>
-                We also wanted to take a look a little closer to home by focusing on the Greater Houston Area, 
-                which consist of 17 different counties in the Southeast Texas.
                 <br>
-                <br> 
+                We also wanted to take a look a little closer to home by focusing on the Greater Houston Area, 
+                which consist of 17 different counties in the Southeast Texas. The Greater Houston area consisting of the following counties:
+                <ul class= "counties">
+                    <li>Austin</li>
+                    <li>Brazoria</li>
+                    <li>Brazos</li>
+                    <li>Chambers</li>
+                    <li>Fort Bend</li>
+                    <li>Galveston</li>
+                    <li>Grimes</li>
+                    <li>Harris</li>
+                    <li>Liberty</li>
+                    <li>Montgomery</li>                   
+                    <li>Polk</li>                  
+                    <li>San Jacinto</li>                   
+                    <li>Walker</li>                  
+                    <li>Waller</li>                
+                    <li>Washington</li>                   
+                    <li>Wharton</li>   
+                </ul>
+            </p>
+            <p class="about text-center">
+                Harris County was then seperated from that DataFrame due to it's size and value counts becoming
+                a large outlier if included with the other Greater Houston Area counties.
             </p>
         </div>
     </section>
 
-    <!-- visualizations Grid Section -->
+    <!-- Visualizations Grid Section -->
     <section class="visualizations" id="visualization">
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">
