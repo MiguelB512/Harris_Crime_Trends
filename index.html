@@ -356,12 +356,40 @@
             </h3>
             <hr class="star-light mb-5" />
             <h4 class="text-center text-uppercase text-white">
-                ------------------------------------------- 
+                Clustering Texas Crime Data with K-means
             </h4>
             <!-- <hr class="star-light mb-5" /> -->
 
             <p class="about-me text-center">
-                harry potter spell mumbo jumbo text placeholder 
+                Our plan for a machine learning model is using Clustering 
+                with K-means and Linear Regression models. Our feature selections 
+                will be looking at the crime rates compared to the population rates 
+                of the counties in Texas with a focused comparison on violent to 
+                nonviolent crimes. We also took a close look on the Greater Houston, TX Area. 
+                The reason for selecting our model is due to the data not being a fit 
+                for supervised machine learning models. When run through supervised 
+                machine learning with ensemble and resampling the data was split to 
+                small for training and testing purposes. With unsupervised machine 
+                learning and clustering with K-means and Linear regression the data 
+                can be split, scaled, fit, and trained with no numerical value issues. 
+                The data is preprocessed and checked for null values, and duplicate values. 
+                A new DataFrame is made to hold the county names separately. The data us then 
+                standardized with StandarScaler(). PCA is used to reduce dimension to three 
+                principal components, and a new PCS DataFrame is created with them. 
+                An Elbow Cure is created to find the best value for K. Predictions are run 
+                after initializing the KMeans model. A new Clustered DataFrame is created 
+                and data from the Crime DataFrame, and PCS DataFrame, including the 
+                predictions held in the 'Class' column, are concatenated on the same 
+                columns. A 3D Scatter Plot is used to visualize the PCA data and clusters 
+                with popup on hover to see crypto data information. A table with the 
+                crime reporting counties is created with the option to sort and select the data.
+                The data is scaled with MinMaxScaler().fir_transform and a new Plot 
+                DataFrame is created to hold the scaled data with the Clustered 
+                DataFrame index. A scatter plot is created using hvplot.scatter 
+                using x="Violent_Offenses" and y="NonViolent_Offenses" with popups 
+                on hover to display data information.
+
+
             </p>
             
             <section class="machinelearning" id="machinelearning">
