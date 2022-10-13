@@ -5,6 +5,9 @@
 ## Project Presentation
 Click [here](https://miguelb512.github.io/Texas_Crime_Trends/) for a website prensentation of out project. 
 
+![image](https://user-images.githubusercontent.com/60283799/195472680-e6f05117-1641-4ad7-8fcb-41cf625f0620.png)
+
+
 ## Project Goals and Purpose 
 
 The Greater Houston Area is a large portion of Southeast Texas consisting of 17 counties, and with an estimated population of 7.21 million. The goal is to look at documented crimes from 2015 to 2020 and their statistics to see how the years, counties, and other factors compare and what factors may determine the crime numbers for different counties. Our analysis looks at an overview of all Texas counties, with a focus on Harris County and the Greater Houston area. 
@@ -14,6 +17,8 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 - What are the crime rates for the Houston area?
 
 - What crimes are trending/increased over the past couple years?
+
+- Was there a drop in crime, or an increase in crime during the Covid-19 Pandemic?
 
 - If there is another pandemic what prediction can be made about potential crimes?
 
