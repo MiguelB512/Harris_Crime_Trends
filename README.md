@@ -14,15 +14,15 @@ The Greater Houston Area is a large portion of Southeast Texas consisting of 17 
 
 ### Questions we aim to answer:
 
-- What are the crime rates for the Houston area?
+-What are the crime rates for the Houston area?
 
-- What crimes are trending/increased over the past couple years?
+-What crimes are trending/increased over the past couple years?
 
-- Was there a drop in crime, or an increase in crime during the Covid-19 Pandemic?
+-What predictions be made about which crimes are more predominant during certain times of the year?
 
-- If there is another pandemic what prediction can be made about potential crimes?
+-Which counties across Texas look similar in crime rates, and what other similarities may they have?
 
-- What predictions be made about which crimes are more predominant during certain times of the year? 
+->Have crime rates slowed down the growth of larger Texas counties?
 
 ## Project Preplanning
 
