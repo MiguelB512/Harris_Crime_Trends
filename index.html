@@ -104,7 +104,7 @@
             </h4>
             <!-- <hr class="star-light mb-5" /> -->
 
-            <p class="about-me text-center">
+            <p class="about text-center">
                 Our goal is to look at documented crimes from 2015 to 2020 
                 and their statistics to see how the years, counties, and other 
                 factors compare and what factors may determine the crime numbers 
@@ -135,7 +135,7 @@
             </h3>
             <hr class="star-light mb-5" />
 
-            <p class="about-me text-center">
+            <p class="about text-center">
                 Our Data comes from the FBI Crime Data Explorer, 
                 which offers an abundance of crime data broken down by 
                 different categories such as county, year, violent vs. 
@@ -165,7 +165,7 @@
                     <br>
                     <li>What predictions be made about which crimes are more predominant during certain times of the year?</li>
                     <br>
-                    <li>Which counties across texas look similar in crime rates, and what other similarities may they have?</li>
+                    <li>Which counties across Texas look similar in crime rates, and what other similarities may they have?</li>
                     <br>
                     <li>Have crime rates slowed down the growth of larger Texas counties?</li> 
                 </ul>
@@ -180,15 +180,17 @@
             </h3>
             <hr class="star-light mb-5" />
 
-            <p class="about-me text-center">
+            <p class="about text-center">
                 Texas began with 23 counties when it gained independence 
                 from Mexico in 1836. A county was consisted of a council 
                 composed of at least one Judge, a varying number of Aldermen, 
                 an Attorney, a Sheriff and a Secretary. 
                 <br>
+                <br>
                 New counties could be established if 100 free male inhabitants 
                 living in an area containing at least 900 square miles petitioned 
                 the government. By 1845, the count had risen to 36.
+                <br>
                 <br>
                 In 1866, the Texas constitution was created. The government 
                 set up by that constitution lasted only a short while because of 
@@ -196,6 +198,7 @@
                 rule that followed, many local elected officials were removed 
                 indiscriminately and either were not replaced or were replaced by 
                 appointees. 
+                <br>
                 <br>
                 This constitution lasted until 1870, when the government was 
                 reorganized under the Constitution of 1869. By the end of 1870 
@@ -212,17 +215,22 @@
             </h3>
             <hr class="star-light mb-5" />
 
-            <p class="about-me text-center">
-                Once we had our Data, we began to look at different visualizations 
-                to get a feel for how the different counties stacked up against 
-                each other. Initially, we had been looking at Harris country and 
-                the greater Houston area (17 counties total), but after seeing how 
-                much Harris county dominated the graphs, we decided to go bigger.
+            <p class="about text-center">
+                Our dataset consisted of all index crimes reported for Texas 
+                by County and their reporting agencies for the year 2015 - 2020.
                 <br>
-                We then gathered data from all counties across texas and combined 
-                them to get a more diverse Dataset and have more visually pleasing 
-                graphics. The Data was cleaned, split into different tables, and 
-                sent into our Postgres DB where we would pull from.  
+                The data was cleaned and explored in our Crime Data Analysis 
+                <a class="text-white" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Crime_Data_Analysis.ipynb" target="_blank"> <u>jupyter notebook</u></a>.
+                <br>
+                With a cleaned and transformed dataset, we began to look at different 
+                visualizations to see how the different counties compared against 
+                each other. We began to plan how could we take this data and fit it to a machine
+                learning model to get predicted outcomes of crime rates based on population.
+                <br>
+                We also wanted to take a look a little closer to home by focusing on the Greater Houston Area, 
+                which consist of 17 different counties in the Southeast Texas.
+                <br>
+                <br> 
             </p>
         </div>
     </section>
