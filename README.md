@@ -2,8 +2,8 @@
 
 ### An analysis by: Jose Miguel Boada | Liz McDaneld
 
-## Google Slides Overview
-Click [here](https://docs.google.com/presentation/d/1Psy_9680WhK3Fl6l-vSwBj8kEAoRhaeSkPDeJF36BqE/edit?usp=sharing) for a short presentation about the overview of our project 
+## Project Presentation
+Click [here](miguelb512.github.io/Texas_Crime_Trends/) for a website prensentation of out project. 
 
 ## Project Goals and Purpose 
 
