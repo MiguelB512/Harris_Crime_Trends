@@ -3,7 +3,7 @@
 ### An analysis by: Jose Miguel Boada | Liz McDaneld
 
 ## Project Presentation
-Click [here](miguelb512.github.io/Texas_Crime_Trends/) for a website prensentation of out project. 
+Click [here](https://miguelb512.github.io/Texas_Crime_Trends/) for a website prensentation of out project. 
 
 ## Project Goals and Purpose 
 
