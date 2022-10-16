@@ -77,14 +77,14 @@
                     <b>Overview</b>
                 </h3>
                 <p>
-                    <br>
+                    <br><strong>
                     The Greater Houston Area is a large portion of Southeast Texas 
                     consisting of 17 counties, and with an estimated population of 7.21 
                     million. Our goal is to look at documented crimes from 2015 to 
                     2020 and their statistics to see how the years, counties, 
                     and other factors may compare, or if they may determine the crimes found 
                     in different counties. Our analysis looks at an overview of all Texas' counties, 
-                    with a focus the Greater Houston Area.
+                    with a focus the Greater Houston Area.</strong>
                 </p>
             <hr class="star-dark mb-5" />
         </div>
@@ -400,7 +400,13 @@
                 The reason for selecting our model is due to the data not being a fit 
                 for supervised machine learning models. When run through supervised 
                 machine learning with ensemble and resampling the data was split to 
-                small for training and testing purposes. With unsupervised machine 
+                small for training and testing purposes.
+
+
+            </p>
+            
+            <p class="about-me text-center">
+                With unsupervised machine 
                 learning and clustering with K-means and Linear regression the data 
                 can be split, scaled, fit, and trained with no numerical value issues. 
                 The data is preprocessed and checked for null values, and duplicate values. 
@@ -419,10 +425,9 @@
                 DataFrame index. A scatter plot is created using hvplot.scatter 
                 using x="Violent_Offenses" and y="NonViolent_Offenses" with popups 
                 on hover to display data information.
-
-
             </p>
-            
+
+
             <section class="machinelearning" id="machinelearning">
                 <div class="container">
                     <h3 class="text-center text-uppercase text-white mb-0">
@@ -596,12 +601,15 @@
                         <hr class="star-dark mb-5" />
                         <img class="img-fluid mb-5" src="assets/img/visualizations/Greater_Houston_Pie_Chart_Edited.jpg" alt="" />
                         <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
+                            This pie chart is a very interesting visualization, showing how much more 
+                            reported crimes come from Harris county compared to other counties 
+                            in the Greater Houston area. Harris had a reported 1,162,602 total crimes 
+                            compared to Fort Bend in second with only 61,945. One thing to note is 
+                            the obvious population difference, with Harris having 4,707,136 compared to 
+                            Fort Bends 739,020. Another interesting conclusion we get from this chart 
+                            is Galveston County with the third most crime reported (52,882) with only
+                            347,699 residents. For reference, Montgomery has 220,000 more residents with 
+                            500 less crimes reported.  
                         </p>
                         <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/Miguel_branch/Plotting/Seaborn_Plotting.ipynb" target="_blank">
                             View Code</a>
@@ -626,12 +634,12 @@
                         <hr class="star-dark mb-5" />
                         <img class="img-fluid mb-5" src="assets/img/visualizations/Top_5_Texas_Counties.jpg" alt="" />
                         <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
+                            Here we can see the top 5 Texas Counties by population compared by 
+                            total crimes reported. This shows us another view of how much more crime Harris county has 
+                            had over these years compared to other Texas cities.  Harris is topping the list with 1,162,602, followed by 
+                            Dallas with 595,792 and Bexar with 543,627. Dallas and Tarrant are both Dallas-Area counties,
+                            with Dallas home to downtown Dallas and other cities and 
+                            Tarrant housting Arlington and Fort-Worth.
                         </p>
                         <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/Miguel_branch/Plotting/Seaborn_Plotting.ipynb" target="_blank">
                             View Code</a>
@@ -656,12 +664,8 @@
                         <hr class="star-dark mb-5" />
                         <img class="img-fluid mb-5" src="assets/img/visualizations/Greater_Houston_Totals_Vs_Year.jpg" alt="" />
                         <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
+                            Another graph showing the Greater Houston area numbers througout the years.
+                            The results stay pretty consistant, with a small dip in all counties in 2018. 
                         </p>
                         <a class="btn btn-primary visualizations-modal-dismiss" href="#">
                             Live Demo
@@ -724,12 +728,10 @@
                         <hr class="star-dark mb-5" />
                         <img class="img-fluid mb-5" src="assets/img/visualizations/Yearly_Totals_by_Offense_Type.jpg" alt="" />
                         <p class="mb-5">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Mollitia neque assumenda ipsam
-                            nihil, molestias magnam, recusandae quos quis
-                            inventore quisquam velit asperiores, vitae?
-                            Reprehenderit soluta, eos quod consequuntur
-                            itaque. Nam.
+                            This final graph is a display of total crimes throughout the years in all of texas.
+                            There is also a split betweeen violent and non-violent reports, with non-violent taking up the large majority. 
+                            The numbers are slowly falling year-by-year, which is a good sign. With 2021 numbers not 
+                            totally compiled yet, we were unable to see if this downward trend has contiuned. 
                         </p>
                         <a class="btn btn-primary visualizations-modal-dismiss" href="#">
                             Live Demo
