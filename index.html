@@ -467,17 +467,40 @@
                                 <img class="img-fluid" src="assets\img\visualizations\crime_data_LR_prediction_line.png" alt="" />
                             </a>
                         </div>
-
                     </div>
                 </div>
             </section>        
         </div>
     </section>
 
+ <!-- Future Analysis Section -->
+ <section class="bg-primary text-white mb-0" id="machinelearning">
+    <div class="container">
+        <h3 class="text-center text-uppercase text-white">
+            <hr class="star-light mb-5" />
+            <b>Future Analysis</b>
+        </h3>
+        <hr class="star-light mb-5" />
+        <p class="about text-center"><b>
+            For future analysis looking at larger detailed datasets over a longer
+            period of time could result in the ability to preform more detailed
+            machine learning and predictions models. 
+            <br>
+            <br>
+            A classification of the data by count of population could also 
+            result in the ablitiy to compared smaller counties with larger 
+            counties by looking at the data for every 10,000 county residents.
+            <br>
+            <br>
+            Access to different datasets, that may not be pupblic access, could result 
+            in a more in depth analysis of crime statistics for the desired areas.
+        </b>
+        </p>        
+    </div>
+</section>
 
-
-    <!-- Education -->
-    <section class="education" id="sources">
+    <!-- sources -->
+    <section class="sources" id="sources">
         <div class="container">
             <h2 class="text-center text-uppercase text-secondary mb-0">
                 <b>Data & Information Sources</b>
@@ -784,7 +807,7 @@
                             A scatter plot is created using hvplot.scatter 
                             using x="Violent_Offenses" and y="NonViolent_Offenses" 
                             with popups on hover to display data information. 
-                            The plot shows the positive corelation of population to total crime in Texas counties.
+                            The plot shows the positive correlation of population to total crime in Texas counties.
                             The clusters are showing the different classes of counties based off of smiliarly sized populations.
                         </p>
                         <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/ML_Models/Unsupervised_ML_Clustering.ipynb" target="_blank">
@@ -810,7 +833,7 @@
                         <hr class="star-dark mb-5" />
                         <img class="img-fluid mb-5" src="assets\img\visualizations\crime_data_LR_prediction_line.png" alt="" />
                         <p class="mb-5">
-                            A linear regression plot is produced to show the prediction line of the plots of population to crime.
+                            A linear regression plot is used to show a prediction line of the correlation of population to crime.
                         </p>
                         <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/ML_Models/Linear_Regression.ipynb" target="_blank">
                             View Code</a>
