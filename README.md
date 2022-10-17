@@ -74,7 +74,7 @@ Our feature selections will be looking at the crime rates compared to the popula
 The reason for selecting our model is due to the data not being a fit for supervised machine learning models. When run through supervised machine learning with ensemble and resampling the data was split to small for training and testing purposes.
 With unsupervised machine learning and clustering with K-means and Linear regression the data can be split, scaled, fit, and trained with no numerical value issues. 
 The data is preprocessed and checked for null values, and duplicate values. A new DataFrame is made to hold the county names separately. The data us then standardized with StandarScaler(). PCA is used to reduce dimension to three principal components, and a new PCS DataFrame is created with them. An Elbow Cure is created to find the best value for K. Predictions are run after initializing the KMeans model. A new Clustered DataFrame is created and data from the Crime DataFrame, and PCS DataFrame, including the predictions held in the 'Class' column, are concatenated on the same columns. 
-A 3D Scatter Plot is used to visualize the PCA data and clusters with popup on hover to see crypto data information. 
+A 3D Scatter Plot is used to visualize the PCA data and clusters with popup on hover to see crime data information. 
 
 ![Clustering_3d](https://user-images.githubusercontent.com/103263248/195412878-d7ab4e9e-af74-45f7-9d7c-5331cf6ed332.png)
 
