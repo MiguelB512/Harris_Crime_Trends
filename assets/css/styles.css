@@ -258,13 +258,15 @@ header.masthead h2 {
 }
 
 .education .location {
-    font-size: 1.6rem;
+    font-size: 1rem;
     font-weight: 500;
+    color: #30336b;
 }
 
 .education .credential-date {
     font-size: 1rem;
     font-weight: 300;
+    color: #30336b;
 }
 
 .education .credential-description {
