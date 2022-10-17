@@ -108,25 +108,21 @@
             <!-- <hr class="star-light mb-5" /> -->
 
             <p class="about text-center"><b>
-                Our goal is to look at documented crimes from 2015 to 2020 
-                and their statistics to see how the years, counties, and other 
-                factors compare and what factors may determine the crime numbers 
-                for different counties.
+                Our focus is to look at an overview of Texas counties in relation 
+                to crimes, with a focus on the Greater Houston 
+                area. 
+                <br>
+                <br>
+                This topic selection is important to our group as we live in the Greater Houston Area
+                as we are sure many of you do as well.
                 <br>
                 <br>
                 Texas is the second largest state by landmass and also has the 
                 second largest population out of all US states at 29,730,311 and 
-                an annual growth rate of 3.85% (as of March 2021).
-                <br>
-                <br>
-                The Greater Houston Area is a large portion of Southeast Texas 
-                consisting of 17 counties, and with an estimated population of 
-                7.21 million. 
-                <br>
-                <br>
-                Our focus is to look at an overview of Texas counties in relation 
-                to crimes, with a focus on the Greater Houston 
-                area. 
+                an annual growth rate of 3.85% (as of March 2021), this makes it a large 
+                resource of data that could be accessed to preform a analysis on crime.
+                
+                
                 </b>
             </p>
 
@@ -171,8 +167,6 @@
                     <li>What are the crime rates for the Houston area?</li>
                     <br>
                     <li>What crimes are trending/increased over the past couple years?</li>
-                    <br>
-                    <li>What predictions be made about which crimes are more predominant during certain times of the year?</li>
                     <br>
                     <li>Which counties across Texas look similar in crime rates, and what other similarities may they have?</li>
                     <br>
@@ -257,8 +251,8 @@
                 learning model to get predicted outcomes of crime rates based on population.
                 <br>
                 <br>
-                We also wanted to take a look a little closer to home by focusing on the Greater Houston Area, 
-                which consist of 17 different counties in the Southeast Texas. The Greater Houston area consisting of the following counties:
+                We wanted to take a look a little closer to home by focusing on the Greater Houston Area. 
+                The Greater Houston area consisting of the following counties:
                 <ul class= "counties">
                     <li>Austin</li>
                     <li>Brazoria</li>
@@ -429,14 +423,14 @@
                 <br>
                 <br>
                 A 3D Scatter Plot is used to visualize the PCA data and clusters 
-                with popup on hover to see crypto data information.
+                with popup on hover to see crime data information.
                 The data is scaled with MinMaxScaler().fit_transform and a new Plot 
                 DataFrame is created to hold the scaled data with the Clustered 
                 DataFrame index. 
                 <br>
                 <br>
                 A scatter plot is created using hvplot.scatter 
-                using x="Violent_Offenses" and y="NonViolent_Offenses" with popups 
+                using x="population" and y="total_crime" with popups 
                 on hover to display data information.
             </b>
             </p>
@@ -825,7 +819,7 @@
                         <img class="img-fluid mb-5" src="assets\img\visualizations\Texas_Counties_Clustering2.png" alt="" />
                         <p class="mb-5">
                             A scatter plot is created using hvplot.scatter 
-                            using x="Violent_Offenses" and y="NonViolent_Offenses" 
+                            using x="population" and y="total_crime" 
                             with popups on hover to display data information. 
                             The plot shows the positive correlation of population to total crime in Texas counties.
                             The clusters are showing the different classes of counties based off of smiliarly sized populations.
