@@ -253,27 +253,27 @@ header.masthead h2 {
     }
 }
 
-.education {
+.sources {
     margin-bottom: -15px;
 }
 
-.education .location {
+.sources .location {
     font-size: 1rem;
     font-weight: 500;
     color: #30336b;
 }
 
-.education .credential-date {
+.sources .credential-date {
     font-size: 1rem;
     font-weight: 300;
     color: #30336b;
 }
 
-.education .credential-description {
+.sources .credential-description {
     max-width: 700px;
 }
 
-.education .credential-divider {
+.sources .credential-divider {
     border-color: rgba(0, 0, 0, 0.3);
 }
 
