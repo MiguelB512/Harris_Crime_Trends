@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Texas Crime Trends | Rice University Data Analytics Bootcamp Final Project</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet" />
+</head>
+
+<body id="page-top">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-dark fixed-top text-uppercase" id="mainNav">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right text-uppercase text-white rounded" type="button"
+                data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link " href="#visualization">visualizations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#machinelearning">Machine Learning</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tableau">Tableau</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#Future-analysis-recommend">Future Reccomendations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contributors">Contributors</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sources">Data Sources</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead bg-primary text-white text-center">
+        <div class="container">
+            <img class="img-fluid mb-5 d-block mx-auto rounded-circle" alt="" />
+            <h1 class="mb-0 "><b>Texas Crime Trends Analysis</b></h1>
+            <hr />
+            <h2 class="mb-0">
+                <b>An analysis by: Jose Miguel Boada | Liz McDanled | Meghan Hull</b>
+            </h2>
+        </div>
+    </header>
+
+    <section class="overview-statement text-center">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-secondary mb-0">
+                    <b>Overview</b>
+                </h3>
+                <p>
+                    <br><b>
+                    The Greater Houston Area is a large portion of Southeast Texas 
+                    consisting of 17 counties, and with an estimated population of 7.21 
+                    million. Our goal is to look at documented crimes from 2015 to 
+                    2020 and their statistics to see how the years, counties, 
+                    and other factors may compare, or if they may determine the crimes found 
+                    in different counties. Our analysis looks at an overview of all Texas' counties, 
+                    with a focus the Greater Houston Area.</b>
+                </p>
+            <hr class="star-dark mb-5" />
+        </div>
+    </section>   
+    
+    
+    <!-- About Section -->
+    <section class="bg-primary text-white mb-0" id="about">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-white">
+                <b>Topic Selction</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <h4 class="text-center text-uppercase text-white">
+                <b>Crime Rates throughout Texas counties from 2015 - 2020</b> 
+            </h4>
+            <!-- <hr class="star-light mb-5" /> -->
+
+            <p class="about text-center"><b>
+                Our focus is to look at an overview of Texas counties in relation 
+                to crimes, with a focus on the Greater Houston 
+                area. 
+                <br>
+                <br>
+                This topic selection is important to our group as we live in the Greater Houston Area
+                as we are sure many of you do as well.
+                <br>
+                <br>
+                Texas is the second largest state by landmass and also has the 
+                second largest population out of all US states at 29,730,311 and 
+                an annual growth rate of 3.85% (as of March 2021), this makes it a large 
+                resource of data that could be accessed to preform a analysis on crime.
+                
+                
+                </b>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <hr class="star-light mb-5" />
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Data Source</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="about text-center"><b>
+                Our Data comes from the FBI Crime Data Explorer, 
+                which offers an abundance of crime data broken down by 
+                different categories such as county, year, violent vs. 
+                nonviolent and more. 
+                <br>
+                <br>
+                We decided to grab the crimes by county for 2015 - 2020 
+                which breaks down not only by county but also by police 
+                department, letting us get a great in depth look at the 
+                whole states statistics.
+            </b>
+            </p>
+
+            <br>
+            <br>
+            <br>
+            
+            <hr class="star-light mb-5" />
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Questions we aim to answer</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p>
+                <ul style="list-style-type:none;" class="text-center">
+                    <li>What are the crime rates for the Houston area?</li>
+                    <br>
+                    <li>What crimes are trending/increased over the past couple years?</li>
+                    <br>
+                    <li>Which counties across Texas look similar in crime rates, and what other similarities may they have?</li>
+                    <br>
+                    <li>Have crime rates slowed down the growth of larger Texas counties?</li> 
+                </ul>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <hr class="star-light mb-5" />
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Brief History on Texas Counties</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="about text-center"><b>
+                Texas began with 23 counties when it gained independence 
+                from Mexico in 1836. A county was consisted of a council 
+                composed of at least one Judge, a varying number of Aldermen, 
+                an Attorney, a Sheriff and a Secretary. 
+                <br>
+                <br>
+                New counties could be established if 100 free male inhabitants 
+                living in an area containing at least 900 square miles petitioned 
+                the government. By 1845, the count had risen to 36.
+                <br>
+                <br>
+                In 1866, the Texas constitution was created. The government 
+                set up by that constitution lasted only a short while because of 
+                the passage of the Reconstruction Acts in 1867. Under the military 
+                rule that followed, many local elected officials were removed 
+                indiscriminately and either were not replaced or were replaced by 
+                appointees. 
+                <br>
+                <br>
+                This constitution lasted until 1870, when the government was 
+                reorganized under the Constitution of 1869. By the end of 1870 
+                the state had 129 organized counties.  
+                <br>
+                <br>
+                The constitution was also specific about the establishment of new counties: 
+                no new county from unorganized territory could be smaller than 900 square miles 
+                and should be square if possible; new counties demarked from established counties 
+                should contain not less than 700 square miles.
+                <br>
+                <br>
+                By 1931, texas had added its last county, Loving County. Nowadays, Texas has the 
+                most counties out of all US states, leading Georgia in second with almost 100 less. 
+                Texas also has 4 of the top 20 counties by population as of 2020 (Harris, Dallas, Tarrant, Bexar) 
+                <br>
+                <br>
+                Between 2010 and 2020, Texas has been home to 5 of the 10 fastest growing counties by population 
+                (Harris, Tarrant, Bexar, Collin, and Travis).
+                </b>
+            </p>
+
+            <br>
+            <br>
+            <br>
+
+            <hr class="star-light mb-5" />
+
+            <h3 class="text-center text-uppercase text-white">
+                <b>Data Exploration</b>
+            </h3>
+            <hr class="star-light mb-5" />
+
+            <p class="about text-center"><b>
+                Our dataset consisted of all index crimes reported for Texas 
+                by County and their reporting agencies for the year 2015 - 2020.
+                <br>
+                The data was cleaned and explored in our Crime Data Analysis 
+                <a class="text-white" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Crime_Data_Analysis.ipynb" target="_blank"> <u>jupyter notebook</u></a>.
+                <br>
+                <br>
+                With a cleaned and transformed dataset, we began to look at different 
+                visualizations to see how the different counties compared against 
+                each other. We began to plan how could we take this data and fit it to a machine
+                learning model to get predicted outcomes of crime rates based on population.
+                <br>
+                <br>
+                We wanted to take a look a little closer to home by focusing on the Greater Houston Area. 
+                The Greater Houston area consisting of the following counties:
+                <ul class= "counties">
+                    <li>Austin</li>
+                    <li>Brazoria</li>
+                    <li>Brazos</li>
+                    <li>Chambers</li>
+                    <li>Fort Bend</li>
+                    <li>Galveston</li>
+                    <li>Grimes</li>
+                    <li>Harris</li>
+                    <li>Liberty</li>
+                    <li>Matagorda</li> 
+                    <li>Montgomery</li>                   
+                    <li>Polk</li>                  
+                    <li>San Jacinto</li>                   
+                    <li>Walker</li>                  
+                    <li>Waller</li>                
+                    <li>Washington</li>                   
+                    <li>Wharton</li>   
+                </ul>
+            </p>
+            <p class="about text-center">
+                Harris County is also seperated from the Greater Houston Area DataFrame due to it's size and value counts becoming
+                a large outlier if included with the other Greater Houston Area counties.
+            </b>
+            </p>
+        </div>
+    </section>
+
+    <!-- Visualizations Grid Section -->
+    <section class="visualizations" id="visualization">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">
+                <b>Visualizations</b>
+            </h2>
+            <hr class="star-dark mb-5" />
+
+            <!-- Each project should include a header and a picture or animated gif.-->
+            <div class="row">
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-1">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Total Crime Reported in the Greater Houston Area between 2015 - 2020</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Greater_Houston_Pie_Chart_Edited.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-2">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Top 5 Crime Heavy Texas Counties</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Top_5_Texas_Counties.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-3">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Greater Houston Area Crime Totals from 2015 - 2020</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Greater_Houston_Totals_Vs_Year.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-5">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Total Crimes reported in Texas from 2015-2020 split by offense type</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/Yearly_Totals_by_Offense_Type.jpg" alt="" />
+                    </a>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <a class="visualizations-item d-block mx-auto" data-toggle="modal" data-target="#visualizations-modal-6">
+                        <div class="visualizations-item-caption d-flex position-absolute h-100 w-100">
+                            <div class="visualizations-item-caption-content my-auto w-100 text-center text-white">
+                                <p>Count of individual crimes from 2015 - 2020</p>
+                                <i class="fas fa-search-plus fa-2x"></i>
+                            </div>
+                        </div>
+                        <img class="img-fluid" src="assets/img/visualizations/crimes_splits_texas.jpg" alt="" />
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Tableau Section -->
+    <section class="tableau text-center" id="tableau">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">
+                <b>Tableau</b>
+            </h2>
+            <hr class="star-dark mb-5" />
+                <div class='tableauPlaceholder' id='viz1666020955625' style='position: relative'>
+                    <noscript>
+                        <a href='#'>
+                        <img alt=' ' 
+                        src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeAnalysisRiceFinal&#47;MapofTexasCountieswithCrimeandPopdetails&#47;1_rss.png' style='border: none' />
+                        </a>
+                        </noscript>
+                            <object class='tableauViz'  style='display:none;'>
+                                <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> 
+                                <param name='embed_code_version' value='3' /> 
+                                <param name='site_root' value='' />
+                                <param name='name' value='CrimeAnalysisRiceFinal&#47;MapofTexasCountieswithCrimeandPopdetails' />
+                                <param name='tabs' value='yes' />
+                                <param name='toolbar' value='yes' />
+                                <param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Cr&#47;CrimeAnalysisRiceFinal&#47;MapofTexasCountieswithCrimeandPopdetails&#47;1.png' /> 
+                                <param name='animate_transition' value='yes' />
+                                <param name='display_static_image' value='yes' />
+                                <param name='display_spinner' value='yes' />
+                                <param name='display_overlay' value='yes' />
+                                <param name='display_count' value='yes' />
+                                <param name='language' value='en-US' />
+                            </object>
+                        </div>                
+                        <script type='text/javascript'>                    
+                            var divElement = document.getElementById('viz1666020955625');                    
+                            var vizElement = divElement.getElementsByTagName('object')[0];                    
+                            vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';                    
+                            var scriptElement = document.createElement('script');                    
+                            scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    
+                            vizElement.parentNode.insertBefore(scriptElement, vizElement);                
+                        </script>
+            <hr class="star-dark mb-5" />
+        </div>
+    </section>
+
+    <!-- Machine Learning Section -->
+    <section class="bg-primary text-white mb-0" id="machinelearning">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-white">
+                <b>Machine Learning</b>
+            </h3>
+            <hr class="star-light mb-5" />
+            <h4 class="text-center text-uppercase text-white">
+               <b> Clustering Texas Crime Data with K-means</b>
+            </h4>
+            <hr class="star-light mb-5" />
+
+            <p class="about text-center"><b>
+                Our plan for a machine learning model is using Clustering 
+                with K-means and Linear Regression models. Our feature selections 
+                will be looking at the crime rates compared to the population rates 
+                of the counties in Texas with a focused comparison on violent to 
+                nonviolent crimes.
+                The reason for selecting our model is due to the data not being a fit 
+                for supervised machine learning models. When run through supervised 
+                machine learning with ensemble and resampling the data was split to 
+                small for training and testing purposes.
+                <br>
+                <br>
+                With unsupervised machine 
+                learning and clustering with K-means and Linear regression the data 
+                can be split, scaled, fit, and trained with no numerical value issues. 
+                The data is preprocessed and checked for null values, and duplicate values. 
+                A new DataFrame is made to hold the county names separately. The data is then 
+                standardized with StandardScaler(). 
+                <br>
+                <br>
+                PCA is used to reduce dimension to three 
+                principal components, and a new PCS DataFrame is created with them. 
+                An Elbow Cure is created to find the best value for K. Predictions are run 
+                after initializing the KMeans model. A new Clustered DataFrame is created 
+                and data from the Crime DataFrame, and PCS DataFrame, including the 
+                predictions held in the 'Class' column, are concatenated on the same 
+                columns. 
+                <br>
+                <br>
+                A 3D Scatter Plot is used to visualize the PCA data and clusters 
+                with popup on hover to see crime data information.
+                The data is scaled with MinMaxScaler().fit_transform and a new Plot 
+                DataFrame is created to hold the scaled data with the Clustered 
+                DataFrame index. 
+                <br>
+                <br>
+                A scatter plot is created using hvplot.scatter 
+                using x="population" and y="total_crime" with popups 
+                on hover to display data information.
+            </b>
+            </p>
+
+
+            <section class="machinelearning" id="machinelearning">
+                <div class="container">
+                    <h3 class="text-center text-uppercase text-white mb-0">
+                       <b>Machine Learning Models</b> 
+                    </h3>
+                    <hr class="star-dark mb-5" />
+
+                    <div class="row">
+                        <div class="col-md-6 col-lg-4">
+                            <a class="machinelearning-item d-block mx-auto" data-toggle="modal" data-target="#machinelearning-modal-1">
+                                <div class="machinelearning-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="machinelearning-item-caption-content my-auto w-100 text-center text-white">
+                                        <p>3D Scatter Plot of Texas Counties Clusters</p>
+                                        <i class="fas fa-search-plus fa-2x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets\img\visualizations\Texas_Counties_Clustering_3d_scatter2.png" alt="" />
+                            </a>
+                        </div>
+                    
+                        <div class="col-md-6 col-lg-4">
+                            <a class="machinelearning-item d-block mx-auto" data-toggle="modal" data-target="#machinelearning-modal-2">
+                                <div class="machinelearning-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="machinelearning-item-caption-content my-auto w-100 text-center text-white">
+                                        <p>Texas Crime Clustering Scatter Plot</p>
+                                        <i class="fas fa-search-plus fa-2x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets\img\visualizations\Texas_Counties_Clustering2.png" alt="" />
+                            </a>
+                        </div>
+
+                        <div class="col-md-6 col-lg-4">
+                            <a class="machinelearning-item d-block mx-auto" data-toggle="modal" data-target="#machinelearning-modal-3">
+                                <div class="machinelearning-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="machinelearning-item-caption-content my-auto w-100 text-center text-white">
+                                        <p>Texas Crime Linear Regression Scatter Plot</p>
+                                        <i class="fas fa-search-plus fa-2x"></i>
+                                    </div>
+                                </div>
+                                <img class="img-fluid" src="assets\img\visualizations\crime_data_LR_prediction_line.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>        
+        </div>
+    </section>
+
+    <!-- Future Analysis Section -->
+    <section class="bg-primary text-white mb-0" id="Future-analysis-recommend">
+        <div class="container">
+            <h3 class="text-center text-uppercase text-white">
+                <hr class="star-light mb-5" />
+                <b>Future Analysis</b>
+            </h3>
+            <hr class="star-light mb-5" />
+            <p class="about text-center"><b>
+                For future analysis looking at larger detailed datasets over a longer
+                period of time could result in the ability to preform more detailed
+                machine learning and predictions models. 
+                <br>
+                <br>
+                A classification of the data by count of population could also 
+                result in the ablitiy to compared smaller counties with larger 
+                counties by looking at the data for every 10,000 county residents.
+                <br>
+                <br>
+                Access to different datasets, that may not be pupblic access, could result 
+                in a more in depth analysis of crime statistics for the desired areas.
+            </b>
+            </p>        
+        </div>
+    </section>
+
+    <!-- sources -->
+    <section class="sources" id="sources">
+        <div class="container">
+            <h2 class="text-center text-uppercase text-secondary mb-0">
+                <b>Data & Information Sources</b>
+            </h2>
+            <hr class="star-dark mb-5" />
+            <div class="credential">
+                <h3 class="location mb-0">
+                    Federal Bureau of Investigation Crime Data Explorer | 
+                    <span class="credential-date text-muted">
+                        <a style="color: #30336b;" href="https://crime-data-explorer.fr.cloud.gov/pages/explorer/crime/crime-trend" target="_blank"> Link </a>
+                    </span>
+                </h3>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <p class="location mb-0">
+                    History on Texas Counties | 
+                    <span class="credential-date text-muted">
+                        <a style="color: #30336b;" href="https://www.texastribune.org/2018/07/03/beto-orourke-visited-all-254-counties-texas-why-are-there-so-many/" target="_blank"> Link </a>
+                    </span>
+                </p>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <p class="location mb-0">
+                    A Decade of Population Growth and Decline in U.S. Counties | 
+                    <span class="credential-date text-muted">
+                        <a style="color: #30336b;" href="https://www.visualcapitalist.com/mapping-a-decade-of-us-population-growth/" target="_blank"> Link </a>
+                    </span>
+                </p>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <p class="location mb-0">
+                    County Organization | 
+                    <span class="credential-date text-muted">
+                        <a style="color: #30336b;" href="https://www.tshaonline.org/handbook/entries/county-organization" target="_blank"> Link </a>
+                    </span>
+                </p>
+            </div>
+            <hr class="credential-divider" />
+            <div class="credential">
+                <p class="location mb-0">
+                    US County Populations 2022 | 
+                    <span class="credential-date text-muted">
+                        <a style="color: #30336b;" href="https://worldpopulationreview.com/us-counties" target="_blank"> Link </a>
+                    </span>
+                </p>
+            </div>
+            <hr class="credential-divider" />
+        </div>
+        
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer text-center" id="contributors">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <h2 class="text-center text-uppercase mb-3">
+                        Contributor
+                    </h2>
+                    <p class="text-uppercase mb-4">
+                        Miguel Boada
+                    </p>
+                    <ul class="list-inline mb-0">
+                        <!-- <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li> -->
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="https://github.com/miguelB512" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+                    <br>
+                    <br>
+
+                    <h2 class="text-center text-uppercase mb-3">
+                        Contributor
+                    </h2>
+                    <p class="text-uppercase mb-4">
+                        Liz McDaneld
+                    </p>
+                    <ul class="list-inline mb-0">
+                        <!-- <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li> -->
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="https://github.com/liz-mcdaneld" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <br>
+                    <br>
+
+
+                    <h2 class="text-center text-uppercase mb-3">
+                        Contributor
+                    </h2>
+                    <p class="text-uppercase mb-4">
+                        Meghan Hull
+                    </p>
+                    <ul class="list-inline mb-0">
+                        <!-- <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="#">
+                                <i class="fab fa-fw fa-linkedin-in"></i>
+                            </a>
+                        </li> -->
+                        <li class="list-inline-item">
+                            <a class="btn-social text-center rounded-circle" href="https://github.com/MeghanHull" target="_blank">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyright py-4 text-center text-white">
+        <div class="container">
+            <small>Copyright &copy; Miguel Boada and Elizabeth McDaneld 2022</small>
+        </div>
+    </div>
+
+
+
+    <!--visualizations Modals: These are what open up when you click on each image. -->
+    <!-- visualizations Modal 1 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-1">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Total Crimes Reported in the Greater Houston Area between 2015 - 2020
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Greater_Houston_Pie_Chart_Edited.jpg" alt="" />
+                        <p class="mb-5">
+                            This pie chart is a very interesting visualization, showing how much more 
+                            reported crimes come from Harris county compared to other counties 
+                            in the Greater Houston area. Harris had a reported 1,162,602 total crimes 
+                            compared to Fort Bend in second with only 61,945. One thing to note is 
+                            the obvious population difference, with Harris having 4,707,136 compared to 
+                            Fort Bends 739,020. Another interesting conclusion we get from this chart 
+                            is Galveston County with the third most crime reported (52,882) with only
+                            347,699 residents. For reference, Montgomery has 220,000 more residents with 
+                            500 less crimes reported.  
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 2 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-2">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Top 5 Crime Heavy Texas Counties
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Top_5_Texas_Counties.jpg" alt="" />
+                        <p class="mb-5">
+                            Here we can see the top 5 Texas Counties by population compared by 
+                            total crimes reported. This shows us another view of how much more crime Harris county has 
+                            had over these years compared to other Texas cities.  Harris is topping the list with 1,162,602, followed by 
+                            Dallas with 595,792 and Bexar with 543,627. Dallas and Tarrant are both Dallas-Area counties,
+                            with Dallas home to downtown Dallas and other cities and 
+                            Tarrant housting Arlington and Fort-Worth. Dallas and Tarrant have a population of 4.5 million when added and averaged between 2015-2020. 
+                            If we add the total crime reports between these two counties over the years, we get roughly 1,000,000  reports which is still quite lower 
+                            than Harris county with a 4.7 million resident count. 
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 3 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-3">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Greater Houston Area Crime Totals from 2015 - 2020
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Greater_Houston_Totals_Vs_Year.jpg" alt="" />
+                        <p class="mb-5">
+                            Another graph showing the Greater Houston area numbers througout the years.
+                            The results stay pretty consistant, with a small dip in all counties in 2018. 
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 5 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-5">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Total Crimes reported in Texas from 2015-2020 split by offense type
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/Yearly_Totals_by_Offense_Type.jpg" alt="" />
+                        <p class="mb-5">
+                            This graph is a display of total crimes throughout the years in all of texas.
+                            There is also a split betweeen violent and non-violent reports, with non-violent taking up the large majority. 
+                            The numbers are slowly falling year-by-year, which is a good sign. With 2021 numbers not 
+                            totally compiled yet, we were unable to see if this downward trend has contiuned. 
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- visualizations Modal 6 -->
+    <div class="modal visualizations-modal mfp-hide" id="visualizations-modal-6">
+        <div class="visualizations-modal-dialog bg-white">
+            <a class="close-button visualizations-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Count of individual crimes from 2015 - 2020
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets/img/visualizations/crimes_splits_texas.jpg" alt="" />
+                        <p class="mb-5">
+                            Here we can see the total crimes throughout all of texas by crime type from 2015-2020. Larceny is by far the most
+                            commonly occuring crime with burglary, assault, and auto theft following after. Murder is the least
+                            frequent crime with 8950 reports. 
+                        </p>
+                        <a class="btn btn-primary visualizations-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/Plotting/Seaborn_Plotting.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+
+    <!--machine learning Modals: These are what open up when you click on each project. -->
+    <!-- machine learning Modal 1 -->
+    <div class="modal machinelearning-modal mfp-hide" id="machinelearning-modal-1">
+        <div class="machinelearning-modal-dialog bg-white">
+            <a class="close-button machinelearning-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            3D Scatter Plot of Texas Counties Clusters
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets\img\visualizations\Texas_Counties_Clustering_3d_scatter2.png" alt="" />
+                        <p class="mb-5">
+                            A 3D Scatter Plot is used to visualize the PCA 
+                            data and clusters with popup on hover to see crypto 
+                            data information. The data is scaled with 
+                            MinMaxScaler().fit_transform and a new Plot 
+                            DataFrame is created to hold the scaled data with the 
+                            Clustered DataFrame index. 
+                        </p>
+                        <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/ML_Models/Unsupervised_ML_Clustering.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ML Modal 2 -->
+    <div class="modal machinelearning-modal mfp-hide" id="machinelearning-modal-2">
+        <div class="machinelearning-modal-dialog bg-white">
+            <a class="close-button machinelearning-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Texas Crime Clustering Scatter Plot
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets\img\visualizations\Texas_Counties_Clustering2.png" alt="" />
+                        <p class="mb-5">
+                            A scatter plot is created using hvplot.scatter 
+                            using x="population" and y="total_crime" 
+                            with popups on hover to display data information. 
+                            The plot shows the positive correlation of population to total crime in Texas counties.
+                            The clusters are showing the different classes of counties based off of smiliarly sized populations.
+                        </p>
+                        <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/ML_Models/Unsupervised_ML_Clustering.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ML Modal 3 -->
+    <div class="modal machinelearning-modal mfp-hide" id="machinelearning-modal-3">
+        <div class="machinelearning-modal-dialog bg-white">
+            <a class="close-button machinelearning-modal-dismiss" href="#" data-dismiss="modal">
+                <i class="fa fa-2x fa-times close-link"></i>
+            </a>
+            <div class="container text-center">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="text-secondary text-uppercase mb-0">
+                            Texas Crime Linear Regression Scatter Plot
+                        </h2>
+                        <hr class="star-dark mb-5" />
+                        <img class="img-fluid mb-5" src="assets\img\visualizations\crime_data_LR_prediction_line.png" alt="" />
+                        <p class="mb-5">
+                            A linear regression plot is used to show a prediction line of the correlation of population to crime.
+                        </p>
+                        <a class="btn btn-primary machinelearning-modal-dismiss" href="https://github.com/MiguelB512/Texas_Crime_Trends/blob/main/ML_Models/Linear_Regression.ipynb" target="_blank">
+                            View Code</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"
+        integrity="sha256-0YPKAwZP7Mp3ALMRVB2i8GXeEndvCq3eSl/WsAl1Ryk=" crossorigin="anonymous"></script>
+</body>
+
+</html>
