@@ -1,6 +1,6 @@
 # Texas Crime Analysis
 
-### An analysis by: Jose Miguel Boada | Liz McDaneld | Meghan Hull
+### An analysis by: Jose Miguel Boada | Liz McDaneld 
 
 ## Project Presentation
 Click [here](https://miguelb512.github.io/Texas_Crime_Trends/) for a website prensentation of out project. 
